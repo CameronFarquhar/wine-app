@@ -26,13 +26,13 @@ Coded by www.creative-tim.com
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="static/css/bootstrap.min.css" rel="stylesheet" />
   <link href="static/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <!-- <link href="static/demo/demo.css" rel="stylesheet" /> -->
-   <link rel="stylesheet" href="static/css/index.css">
+   <!-- <link rel="stylesheet" href="static/css/index.css"> -->
 </head>
 
 <body class="">
@@ -70,8 +70,14 @@ Coded by www.creative-tim.com
           </li>
           <li>
             <a href="{{ url_for('charts') }}">
-              <i class="nc-icon nc-bell-55"></i>
+              <i class="nc-icon nc-chart-bar-32"></i>
               <p>Charts</p>
+            </a>
+          </li>
+          <li>
+            <a href="{{ url_for('new_charts') }}">
+              <i class="nc-icon nc-laptop"></i>
+              <p>Tableau</p>
             </a>
           </li>
         </ul>
@@ -97,6 +103,12 @@ Coded by www.creative-tim.com
       <div class="content">
         <div class="row">
           <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="places-buttons">
+                  <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto text-center">
+                      <h4 class="card-title">Search Global Wine Scores<center>
         <!-- <h1><center>Search Wine</center></h1> -->
         <form class="example" method="post" action="" style="margin:auto;max-width:600px">
             <input placeholder="Enter a Year" name="wine" class="form-control formcontrol-sm">
@@ -130,6 +142,9 @@ Coded by www.creative-tim.com
             </tbody>
         </table>
         </center>
+        <div class="card-footer ">
+          <hr>
+        </div>
       </div>
     </div>
         <!--   Core JS Files   -->

@@ -19,7 +19,7 @@ Final result: https://hakuna-moscato.herokuapp.com
 * In addition to the above, we utilized: Heroku, Bootstrap, Plotly, Leaflet and D3
 * Powered by a dataset with over 200000 records
 * Includes user-driven interaction 
-
+ 
 
 ## Datasets:
 <img src="IMG/Wine (1).jpg" width=48%>

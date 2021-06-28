@@ -74,8 +74,14 @@ Coded by www.creative-tim.com
           </li>
           <li class="active ">
             <a href="{{ url_for('charts') }}">
-              <i class="nc-icon nc-bell-55"></i>
+              <i class="nc-icon nc-chart-bar-32"></i>
               <p>Charts</p>
+            </a>
+          </li>
+          <li>
+            <a href="{{ url_for('new_charts') }}">
+              <i class="nc-icon nc-laptop"></i>
+              <p>Tableau</p>
             </a>
           </li>
         </ul>
@@ -105,9 +111,10 @@ Coded by www.creative-tim.com
               <div class="card-header">
               </div>
               <center>
-                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+
                 <div class="panel-heading">
-                  <h3 class="panel-title">Choose A Country</h3>
+                  <h5 class="card-title">Choose A Country</h5>
+                  <select id="selDataset" onchange="optionChanged(this.value)"></select>
                 </div>
                 <div id="sample-metadata" class="panel-body">
                 </div></center>
@@ -122,20 +129,27 @@ Coded by www.creative-tim.com
                   </div>
                 </div>
               </div>
+              <div class="card-footer ">
+                <hr>
+              </div>
+            </div>
+            <div class="card">
         <div class="row">
           <div class="col-md-12">
-            <div class="card">
+            <!-- <div class="card"> -->
               <div class="card-body">
                 <div class="places-buttons">
                   <div class="row">
                     <div class="col-md-6 ml-auto mr-auto text-center">
-                      <h4 class="card-title">
-                        A Countrie's Average Wine Rating Based on The Age Of The Wine
+                      <h5 class="card-title">
+                        A Country's Average Wine Rating </h5>
+                        <p class="card-category">Based on The Age Of The Wine</p>
+
                         <!-- <canvas id="line-chart" width="800" height="400"></canvas> -->
-                      </h4>
+
                     </div>
                   </div>
-                  <div id="line-chart"></div>
+                  <center><div id="line-chart"></div></center>
                   <!-- <div class="row">
                     <div class="col-lg-8 ml-auto mr-auto">
                       <div class="row">
@@ -144,6 +158,9 @@ Coded by www.creative-tim.com
                       </div>
                     </div>
                   </div> -->
+                  <div class="card-footer ">
+                    <hr>
+                  </div>
                 </div>
               </div>
             </div>
@@ -154,7 +171,7 @@ Coded by www.creative-tim.com
   </div>
   <!--   Core JS Files   -->
   <script src="static/js/core/jquery.min.js"></script>
-  <script src="static/js/core/popper.min.js"></script>
+  <!-- <script src="static/js/core/popper.min.js"></script> -->
   <script src="static/js/core/bootstrap.min.js"></script>
   <script src="static/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!-- Chart JS -->
@@ -167,7 +184,7 @@ Coded by www.creative-tim.com
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="https://d3js.org/d3.v6.min.js"></script>
   <script src="static/js/chart-page.js"></script>
-  <script src="static/demo/demo.js"></script>
+
 </body>
 
 </html>
