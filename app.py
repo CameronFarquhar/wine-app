@@ -32,10 +32,17 @@ except:
     print('Error')
 
 @app.route("/")
-def home():
+def index():
 
     # Return template and data
     return render_template("index.html")
+
+@app.route("/home")
+def home():
+
+    # Return template and data
+    return render_template("home.html")
+
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
@@ -97,17 +104,35 @@ def new_charts():
     # Return template and data
     return render_template("new_charts.html")
 
-@app.route("/charts")
-def charts():
+@app.route("/team")
+def team():
 
     # Return template and data
-    return render_template("charts.html")
+    return render_template("team.html")
 
 @app.route("/test")
 def test():
 
     # Return template and data
     return render_template("test.html")
+
+@app.route("/icons")
+def icons():
+
+    # Return template and data
+    return render_template("icons.html")
+
+@app.route("/winemag")
+def winemag():
+
+    # Return template and data
+    return render_template("wine-mag.html")
+
+@app.route("/charts")
+def charts():
+
+    # Return template and data
+    return render_template("charts.html")
 
 
 
